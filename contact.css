@@ -1,0 +1,364 @@
+* {
+    font-family: Raleway;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background: #2c2f48;
+}
+.header{
+    
+    min-height: 60vh;
+    width: 100%;
+   margin: 200px 0 0 0;
+    position: relative; 
+}
+
+nav{
+    position: fixed;
+    width: -webkit-fill-available;
+    top: 0px;
+    background: rgba(34, 34, 34, 0.2);
+    display: flex;
+    padding: 0% 6%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav img{
+    width: 200px;
+    
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+.text-box h1{
+    font-size: 62px;
+}
+
+.contact-container {
+  max-width: 1200px;
+ margin: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  background: #363953;
+  box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.form-container {
+  padding: 20px;
+}
+.form-container h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.contact-form {
+  display: grid;
+  row-gap: 1rem;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #2c2f48;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #fff;
+  border-radius: 0.4rem;
+}
+.contact-form textarea {
+  resize: none;
+  height: 250px;
+    
+}
+.contact-form .send-button {
+  border: none;
+  outline: none;
+  background: #00dbde;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.contact-form .send-button:hover {
+  background: hsl(181, 100%, 44%, 0.8);
+  transition: 0.3s all linear;
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+/* Making Responisve */
+@media (max-width: 900px) {
+  .contact-container {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+@media (max-width: 900px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    
+    margin-top: 20rem !important;
+  }
+  .map iframe {
+    height: 400px;
+  }
+}
+.content1{
+   display: inline-block;
+  margin: 130px auto;
+  text-align: center;
+  padding-top: 0 20px;
+    color: #d9d9d9;
+}
+.content1 .text{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #202020;
+}
+.content1 .p{
+  font-size: 2.1875rem;
+  font-weight: 600;
+   color: #202020;
+}
+
+
+
+.footer{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+ 
+ 
+}
+.main-content{
+  display: flex;
+    background: #111;
+    color: #d9d9d9;
+    
+
+}
+a {
+  color: #d9d9d9;
+ background-color: transparent;
+  text-decoration: none;
+       
+ 
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+    color: #d9d9d9;
+    
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+    color: #d9d9d9;
+   
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+    color: #d9d9d9;
+
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+    
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #f12020;
+  top: -10px;
+    
+}
+
+.left .content p{
+  text-align: justify;
+    color: #d9d9d9;
+   
+}
+.right .content ul {
+   text-align: left;
+}
+.left .content .social{
+  margin: 30px 0 0 0;
+    color: #d9d9d9;
+}
+.left .content .social a{
+  padding: 0 2px;
+    color: #d9d9d9;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+  
+}
+.left .content .social a span:hover{
+  background: #f12020;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+   
+}
+
+
+.center .content .fas:hover{
+  background: #f12020;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+    
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.center .content .location{
+    margin: 15px 0;
+}
+ .right .content a{
+   position: relative;
+    
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+    color: #d9d9d9;
+}
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 30px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f12020;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.right form .btn button:hover{
+  background: #000;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color: #f12020;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
